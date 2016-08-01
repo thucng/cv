@@ -1,4 +1,50 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+	.typing-effect, .profile span {
+		font-size:14px;
+	}
+	
+	
+	/* slide 1 */
+	.my-profile{
+		padding:50px 0;
+	}
+	
+	.introduction__title:after{
+		top:0px;
+		left:55%;
+	}
+	.introduction__title, .introduction__content{
+		width:100%;
+	}
+	.introduction__content{
+		padding-left:60px;
+	}
+	
+	.introduction__title span span{
+		font-size: 68px;
+	}
+	
+	.about{
+		padding: 50px 20px;
+	}
+	
+	/* slide 3 */
+	
+	#slide3{
+		padding:50px 0;
+	}
+	
+	.my-skill .col-1, .my-skill .col-2, .my-skill .col-3{
+		width:100%;
+		height: 100%;
+		padding: 40px;
+	}
+	.my-skill .col-2{
+		min-width:100vw;
+	}
+	
+	/* slide 4 */
+	
 	#timeline {
 		margin: 30px;
 		padding: 0;
@@ -21,23 +67,16 @@
 	.timeline-icon {
 		left: 0;
 	}
-}
-
-
-@media screen and (max-width: 600px) {
-	.my-skill .col-1, .my-skill .col-2, .my-skill .col-3{
-		width:100%;
-		height: 100%;
-		padding: 40px;
+	
+	
+	
+	/*portfolio */
+	.porfolio-item, .front, .back {
+		width: 100%;
 	}
-	.my-profile .my-pict, .my-profile .my-desc{
-		width:100%;
-		position: relative;
-	}
-	.my-profile .my-pict{
-		height: 100vw;
-	}
-
+	
+	
+	/* slide 6 */
 	.my-cont .contact-form{
 		width: 100%;
 	}
@@ -50,7 +89,119 @@
 	.my-cont .contact-form .group textarea,.my-cont .contact-form .group input{
 		width: 100%;
 	}
+	
+	.my-cont .contact-info{
+		float:left;
+		width:100%;
+		font-size: 1em;
+	}
+	
+	.my-cont .contact-info pre[class*="language-"] code[class*="language-"]{
+		top: 0px;
+		left: -208px;
+	}
 
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+	/* slide 1 */
+	.my-profile{
+		padding:50px;
+	}
+	
+	.introduction__title:after{
+		top:140px;
+		left:calc(100% - 220px);
+	}
+	.introduction__title, .introduction__content{
+		width:100%;
+	}
+	.introduction__content{
+		padding-left:60px;
+	}
+	
+	
+	.introduction__title span span{
+		font-size: 54px;
+	}
+	
+	.about{
+		padding: 50px 40px 0 40px;
+	}
+	
+	
+	/* slide 3 */
+	
+	#slide3{
+		padding:50px 0;
+	}
+	
+	.my-skill .col-1, .my-skill .col-2, .my-skill .col-3{
+		width:100%;
+		height: 100%;
+		padding: 40px;
+	}
+	.my-skill .col-2{
+		min-width:100vw;
+	}
+	
+	
+	/* slide 4 */
+	
+	#timeline {
+		margin: 30px;
+		padding: 0;
+	}
+	#timeline:before{
+		left: 0;
+	}
+	
+	#timeline .timeline-item .timeline-content {
+		width: 90%;
+		float: right;
+	}
+	#timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
+		left: 10%;
+		margin-left: -6px;
+		border-left: 0;
+		
+	}
+
+	.timeline-icon {
+		left: 0;
+	}
+	
+	
+	/*portfolio */
+	.porfolio-item, .front, .back {
+		width: 100%;
+	}
+	
+	
+	/* slide 6 */
+	.my-cont .contact-form{
+		width: 100%;
+	}
+
+	.my-cont .contact-form .group{
+		width: 100%;
+		margin: 25px 0;
+	}
+
+	.my-cont .contact-form .group textarea,.my-cont .contact-form .group input{
+		width: 100%;
+	}
+	
+	.my-cont .contact-info{
+		float:left;
+		width:100%;
+		font-size: 1.1em;
+	}
+	
+	.my-cont .contact-info pre[class*="language-"] code[class*="language-"]{
+		top: 0px;
+		left: -208px;
+	}
 }
 
 @media screen and (max-width: 50em) {
