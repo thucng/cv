@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NGUYEN Dong Thuc CV</title>
+	<meta charset="UTF-8"> 
+	
+	<link rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css"/>
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style_skill.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/prism.css"type="text/css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	
+	<script src="js/raphael.js" type="text/javascript"></script>
+    <script src="js/prism.js" type="text/javascript"></script>
+	
+		
+		<script>
+			var mapCenter = new google.maps.LatLng(48.8808712,2.412156);
+			
+			
+			function initialize() {
+				var mapProp = {
+					center:mapCenter,
+					zoom:15,
+					disableDefaultUI:true,
+					mapTypeId:google.maps.MapTypeId.ROADMAP
+				};
+			  
+				var map = new google.maps.Map(document.getElementById("map"),mapProp);
+				var marker = new google.maps.Marker({
+					position: mapCenter,
+					title:'My house'
+				});
+				
+				marker.setMap(map);
+			}
+			
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+		<script>
+		(function() {
+			function p(g, d) {
+				this.j = (this.i = "PUBLIC" !== g) ? g : "*";
+				this.o = d
+			}
+
+			function w() {
+				var g = {
+					embedDomain: "PUBLIC"
+				};
+
+				function d(b) {
+					0 === $(b.target).closest(".signupForm, .loginForm, .resetForm, .header, .footer").length && f.sendMessage({
+						type: "LoginSignup",
+						action: "hide"
+					})
+				}
+		}
+		window !== window.top && w();
+		(function() {
+			function g() {
+				$("#slide1").mousemove(function(a) {
+					n = a.clientX;
+					r = a.clientY;
+					v = Date.now();
+					t || m()
+				});
+				$(window).on("blur mouseout", function() {
+					r = n = null
+				}).on("resize", function() {
+					c && c.parentNode && c.parentNode.removeChild(c);
+					d()
+				});
+				d()
+			}
+
+			function d() {
+				var a, e;
+				q();
+				a = $("body").width();
+				e = $("body").height();
+				c = document.createElement("canvas");
+				c.className = "loginFun";
+				c.width = a;
+				c.height = e;
+				$("#slide1").append(c);
+				h = document.createElement("canvas");
+				h.width = a;
+				h.height = e;
+				if (c.getContext && c.getContext("2d") && (f = c.getContext("2d"),
+						b = h.getContext("2d"), b.lineCap = "round", b.shadowColor = "#000000", b.shadowBlur = -1 < navigator.userAgent.indexOf("Firefox") ? 0 : 30, !k)) {
+					k = new Image;
+					if (!$("#slide1").css("background-image")) throw Error("body must have a background image");
+					$(k).one("load", m);
+					$(k).attr("src", "img/bg2.jpg")
+				}
+			}
+
+			function q() {
+				u = [];
+				$(".js-blurEffect--skip").each(function(a, b) {
+					var c;
+					c = $(b);
+					c.is(":visible") && (a = c.position(), b = c.outerWidth(), c = c.outerHeight(), u.push({
+						top: a.top,
+						left: a.left,
+						width: b,
+						height: c
+					}))
+				})
+			}
+
+			function m() {
+				var a,
+					d = Date.now();
+				a = $("#slide1").scrollTop();
+				t = d > v + 500 ? !1 : !0;
+				n && t && e.unshift({
+					time: d,
+					x: n,
+					y: r + a
+				});
+				for (a = 0; a < e.length;) 1E3 < d - e[a].time ? e.length = a : a++;
+				0 < e.length && window.l(m);
+				b.clearRect(0, 0, h.width, h.height);
+				for (a = 1; a < e.length; a++) {
+					var g = Math.sqrt(Math.pow(e[a].x - e[a - 1].x, 2) + Math.pow(e[a].y - e[a - 1].y, 2));
+					b.strokeStyle = "rgba(0,0,0," + Math.max(1 - (d - e[a].time) / 1E3, 0) + ")";
+					b.lineWidth = 75 + 75 * Math.max(1 - g / 50, 0);
+					b.beginPath();
+					b.moveTo(e[a - 1].x, e[a - 1].y);
+					b.lineTo(e[a].x, e[a].y);
+					b.stroke()
+				}
+				d = c.width;
+				a = c.width / k.naturalWidth *
+					k.naturalHeight;
+				a < c.height && (a = c.height, d = c.height / k.naturalHeight * k.naturalWidth);
+				f.drawImage(k, 0, 0, d, a);
+				f.globalCompositeOperation = "destination-in";
+				f.drawImage(h, 0, 0);
+				f.globalCompositeOperation = "source-over";
+				u.forEach(function(a) {
+					f.clearRect(a.left, a.top, a.width, a.height)
+				})
+			}
+			var c, h, f, b, k, n = null,
+				r = null,
+				e = [],
+				v = 0,
+				t = !0,
+				u = [];
+			"createTouch" in document || $(g);
+			window.l = function() {
+				return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame ||
+					window.msRequestAnimationFrame || function(a) {
+						window.setTimeout(a, 1E3 / 60)
+					}
+			}()
+		})();
+	})();
+        </script>
+
+
+        <script>
+
+        	$(document).ready(function() {
+				$('.menu a').click(function (){
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var $target = $(this.hash);
+						$target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+						if($target.length){
+							var targetOffset = $target.offset().top;
+							$('.menu a').removeClass('active');
+							$(this).addClass('active');
+							$('html, body').animate({scrollTop: targetOffset}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		 
+
+        </script>
+		
+		<script>
+			var o = {
+				init: function(){
+					this.diagram();	
+				},
+				random: function(l, u){
+					return Math.floor((Math.random()*(u-l+1))+l);
+				},
+				diagram: function(){
+					var r = Raphael('diagram', 400, 400),
+						rad = 73;
+
+					r.circle(200, 200, 85).attr({ stroke: 'none', fill: '#193340' });
+
+					var title = r.text(200, 200, 'Work Exp').attr({
+						font: '20px Arial',
+						fill: '#fff'
+					}).toFront();
+
+					r.customAttributes.arc = function(value, color, rad){
+						var v = 3.6*value,
+							alpha = v == 360 ? 359.99 : v,
+							random = o.random(91, 240),
+							a = (random-alpha) * Math.PI/180,
+							b = random * Math.PI/180,
+							sx = 200 + rad * Math.cos(b),
+							sy = 200 - rad * Math.sin(b),
+							x = 200 + rad * Math.cos(a),
+							y = 200 - rad * Math.sin(a),
+							path = [['M', sx, sy], ['A', rad, rad, 0, +(alpha > 180), 1, x, y]];
+						return { path: path, stroke: color }
+					}
+
+					$('.get').find('.arc').each(function(i){
+						var t = $(this), 
+							color = t.find('.color').val(),
+							value = t.find('.percent').val(),
+							text = t.find('.text').text();
+
+						rad += 30;	
+						var z = r.path().attr({ arc: [value, color, rad], 'stroke-width': 26 });
+
+						z.mouseover(function(){
+							this.animate({ 'stroke-width': 50, opacity: .75 }, 1000, 'elastic');
+							if(Raphael.type != 'VML') //solves IE problem
+								this.toFront();
+							title.animate({ opacity: 0 }, 500, '>', function(){
+								this.attr({ text: text + '\n' + value + '%' }).animate({ opacity: 1 }, 500, '<');
+							});
+						}).mouseout(function(){
+							this.animate({ 'stroke-width': 26, opacity: 1 }, 1000, 'elastic');
+						});
+					});
+				}
+			}
+			$(function(){ o.init(); });
+
+		</script>
+		<script>
+			var TxtType = function(el, toRotate, period) {
+				this.toRotate = toRotate;
+				this.el = el;
+				this.loopNum = 0;
+				this.period = parseInt(period, 10) || 2000;
+				this.txt = '';
+				this.tick();
+				this.isDeleting = false;
+			};
+
+			TxtType.prototype.tick = function() {
+				var i = this.loopNum % this.toRotate.length;
+				var fullTxt = this.toRotate[i];
+
+				if (this.isDeleting) {
+				this.txt = fullTxt.substring(0, this.txt.length - 1);
+				} else {
+				this.txt = fullTxt.substring(0, this.txt.length + 1);
+				}
+
+				this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+				var that = this;
+				var delta = 200 - Math.random() * 100;
+
+				if (this.isDeleting) { delta /= 2; }
+
+				if (!this.isDeleting && this.txt === fullTxt) {
+				delta = this.period;
+				this.isDeleting = true;
+				} else if (this.isDeleting && this.txt === '') {
+				this.isDeleting = false;
+				this.loopNum++;
+				delta = 500;
+				}
+
+				setTimeout(function() {
+				that.tick();
+				}, delta);
+			};
+
+			window.onload = function() {
+				var elements = document.getElementsByClassName('typing-effect');
+				for (var i=0; i<elements.length; i++) {
+					var toRotate = elements[i].getAttribute('data-type');
+					var period = elements[i].getAttribute('data-period');
+					if (toRotate) {
+					  new TxtType(elements[i], JSON.parse(toRotate), period);
+					}
+				}
+				// INJECT CSS
+				var css = document.createElement("style");
+				css.type = "text/css";
+				css.innerHTML = ".typing-effect > .wrap { border-right: 0.08em solid #fff}";
+				document.body.appendChild(css);
+			};
+		</script>
+		
+		<script>
+			$(document).ready(function() {
+				$(".tab-control ul li:first-child").click(function(){
+					$(".tab-control ul li:first-child").toggleClass("selected");
+					$(".tab-control ul li:last-child").removeClass("selected");
+					$("#formation-timeline").addClass("active-formation");
+					$("#experience-timeline").removeClass("active-experience");
+				});
+				$(".tab-control ul li:last-child").click(function(){
+					$(".tab-control ul li:first-child").removeClass("selected");
+					$(".tab-control ul li:last-child").toggleClass("selected");
+					$("#formation-timeline").removeClass("active-formation");
+					$("#experience-timeline").addClass("active-experience");
+				});
+				$("footer span").click(function() {
+					$("html, body").animate({ scrollTop: 0 }, 1000);
+					return false;
+				});
+				$(".submit-btn").click(function() {
+					$(".submit-btn").toggleClass("btn-success");
+					setTimeout( function() { $(".submit-btn").removeClass("btn-success") }, 10000 );
+					return false;
+				});
+			});
+		</script>
+        
+</head>
+
+<body>
+	
+	<div class="menu-wrap">
+		<nav class="menu">
+			<div class="icon-list">
+				<a href="#slide1" class="active"><span>Home</span></a>
+				<a href="#slide2"><span>About</span></a>
+				<a href="#slide3"><span>Skill</span></a>
+				<a href="#slide4"><span>Resume</span></a>
+				<a href="#slide5"></i><span>Portfolio</span></a>
+				<a href="#slide6"></i><span>Contact</span></a>
+			</div>
+		</nav>
+	</div>
+
+
+
+
+	<div id="slide1">
+ 		<div class="content">
+ 			<div class="profile">
+				<h1>
+				  <a href="" class="typing-effect" 
+				  title="Something about me"
+					data-period="2000" 
+					data-type='[ "NGUYEN Dong Thuc", "Intégrateur graphiste", "Front-end développeur" ]'>
+					<span class="wrap"></span>
+				  </a>
+				</h1>
+				<p></p>
+			</div>
+ 		</div> 
+ 	</div> 
+
+	 <div id="slide2">
+		 <div class="content">
+		 	<div class="my-profile">
+		 		<div class="introduction">
+					<div class="introduction__title">
+						<span>Je travaille <span>avec ma passion</span></span>
+					</div>
+
+					<div class="introduction__content inner-text">
+						<p>
+							<strong> NGUYEN Dong Thuc </strong> <br>
+							<strong> 23 rue Jean Moulin, 93260 Les Lilas</strong><br>
+							<strong> 07 82 79 04 89 </strong><br>
+							<strong> thucngdg@gmail.com </strong><br>
+							<strong> www.thucnguyen.info </strong><br>
+							<strong> Front-end dévéloppeur chez SCOR </strong><br>
+						</p>
+					</div>
+				</div>
+			
+				<div class="about">
+					<h2>ipsum dolor</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet bibendum nisi. Proin tincidunt posuere viverra. In et massa ex. Quisque maximus justo id dictum accumsan. Aliquam interdum ex ac erat auctor, vitae sagittis velit laoreet. Curabitur fermentum felis est, lobortis tempus erat varius in.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+				
+
+
+	<div id="slide3">
+		<div class="title">
+			<h2>Mes Expériences</h2>
+		</div>
+		<div class="content">
+			<div class="my-skill">
+			 	<div class="col-1">
+			 		<h3><i class="fa fa-code"></i> Code Skills</h3>
+				 	<div class="code-skill">
+				 		<div class="skill_bar">
+							<div id="html" class="skill"> 
+								<span class="skill_area ">HTML5</span>
+							</div>
+							<span class="percent_text ">60%</span>
+						</div>
+						<div class="skill_bar">
+							<div id="css" class="skill"> 
+								<span class="skill_area ">CSS3</span>
+							</div>
+							<span class="percent_text ">85%</span>
+						</div>
+						<div class="skill_bar">
+							<div id="javascript" class="skill">
+								<span class="skill_area ">Javascript</span>			
+							</div>
+								<span class="percent_text ">65%</span>
+						</div>
+						<div class="skill_bar">
+							<div id="query" class="skill">
+								<span class="skill_area ">jQuery</span>
+							</div>
+							<span class="percent_text ">65%</span>
+						</div>
+						<div class="skill_bar">
+							<div id="primefaces" class="skill">
+								<span class="skill_area ">Primefaces</span>
+							</div>
+							<span class="percent_text ">75%</span>
+						</div>
+						<div class="skill_bar">
+							<div id="java" class="skill">
+								<span class="skill_area ">Java</span>
+							</div>
+							<span class="percent_text ">70%</span>
+						</div>
+						<div class="skill_bar">
+							<div id="php" class="skill">
+								<span class="skill_area ">PHP</span>
+							</div>
+							<span class="percent_text ">50%</span>
+						</div>
+				 	</div>
+			 	</div>
+			 	<div class="col-2">
+			 		<div class="work-exp">
+			 			<h3><i class="fa fa-cogs"></i> Work experience</h3>
+						<div id="diagram"></div>
+							<div class="get">
+								<div class="arc">
+									<span class="text">Integrateur</span>
+									<input type="hidden" class="percent" value="95" />
+									<input type="hidden" class="color" value="#97BE0D" />
+								</div>
+								<div class="arc">
+									<span class="text">Web</span>
+									<input type="hidden" class="percent" value="70" />
+									<input type="hidden" class="color" value="#D84F5F" />
+								</div>
+								<div class="arc">
+									<span class="text">Design</span>
+									<input type="hidden" class="percent" value="50" />
+									<input type="hidden" class="color" value="#88B8E6" />
+								</div>
+							</div>
+			 		</div>
+			 	</div>
+				<div class="col-3">
+					<div class="lang-skill">
+			 			<h3><i class="fa fa-language"></i> Langues</h3>
+			 			<div id="french" class="langue">
+			 				<span>Francais</span>
+							<ol>
+								<li class=""></li>
+								<li class=""></li>
+								<li class=""></li>
+								<li class=""></li>
+								<li class="last"></li>
+								<li class="last"></li>
+							</ol>
+						</div>
+			 			<div id="english" class="langue">
+							<span>Anglais</span>
+							<ol>
+								<li class=""></li>
+								<li class=""></li>
+								<li class=""></li>
+								<li class="last"></li>
+								<li class="last"></li>
+								<li class="last"></li>
+							</ol>
+						</div>
+						<div id="vietnamese" class="langue">
+							<span>Vietnamien</span>
+							<ol>
+								<li class=""></li>
+								<li class=""></li>
+								<li class=""></li>
+								<li class=""></li>
+								<li class=""></li>
+								<li class=""></li>
+							</ol>
+						</div>
+			 		</div>
+				</div>
+			</div>
+		 </div> 
+	 </div> 
+
+	 <div id="slide4">
+		<div class="title">
+			<h2>Résumé</h2>
+		</div>
+		 <div class="content">
+		 	<div class="tab-scroll">
+				<nav class="tab-control">
+					<ul>
+						<li class="selected"><a id="p1">Formation</a></li>
+						<li><a id="p2">Experience</a></li>
+					</ul>
+				</nav>
+				
+				<!-- Start Tab Experience -->
+				<div id="experience-timeline" class="page">
+				 	<div id="timeline">
+						<div class="timeline-item">
+							<div class="timeline-icon">
+								<i class="fa-briefcase"></i>
+							</div>
+							<div class="timeline-content">
+								<h2>Stage de fin d’études</h2>
+								<a href="www.scor.com/fr/" target="_blank">Société SCOR</a>
+								<p>Intégration graphiste à partir des marquettes (Primefaces, CSS3, Jquery)</p>
+								<p>Mise en œuvres des charts, des arbres hiérarchiques (ajax, jqPlot, jsPlumb,...)</p>
+							</div>
+						</div>
+
+						<div class="timeline-item">
+							<div class="timeline-icon">
+								<i class="fa-briefcase"></i>
+							</div>
+							<div class="timeline-content right">
+								<h2>CDD - Intégrateur / Développeur front-end</h2>
+								<a href="www.scor.com/fr/" target="_blank">Société SCOR</a>
+								<p>Intégration graphiste à partir des marquettes (Primefaces, CSS3, Jquery)</p>
+								<p>Mise en œuvres des charts, des arbres hiérarchiques (ajax, jqPlot, jsPlumb,...)</p>
+							</div>
+						</div>
+
+						<div class="timeline-item">
+							<div class="timeline-icon">
+								<i class="fa-briefcase"></i>
+							</div>
+							<div class="timeline-content">
+								<h2>Freelance - Administrateur</h2>
+								<a href="www.kengsub.com" target="_blank">www.kengsub.com</a>
+								<p>Gestion des publications, détection des problèmes au niveau technique</p>
+								<p>Contact et conseil sur les bonnes pratiques avec des clients via mail, facebook</p>
+							</div>
+						</div>
+						
+						<div class="timeline-item">
+							<div class="timeline-icon">
+								<i class="fa-briefcase"></i>
+							</div>
+							<div class="timeline-content right">
+								<h2>Stage de fin d’études</h2>
+								<a href="www.ifrc.vn" target="_blank">Société Intelligent Financial Research & Consulting</a>
+								<p>Projet “ VNFDB – Vietnam Financial Database”</p>
+								<p>PHP, HTML, CSS, JS, Visual FoxPro</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Tab Experience -->
+				
+
+				<!-- Start Tab Formation -->
+				<div id="formation-timeline" class="page active-formation">
+					<div id="timeline">
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<i class="fa-graduation-cap"></i>
+						</div>
+						<div class="timeline-content">
+							<h2>Master 2 - Programmation et Logiciel Surs</h2>
+							<a href="www.scor.com/fr/" target="_blank">Université Paris 13</a>
+							<p>2014 - 2016</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<i class="fa-graduation-cap"></i>
+						</div>
+						<div class="timeline-content right">
+							<h2>Licence Informatique</h2>
+							<a href="www.scor.com/fr/" target="_blank">Université Claude Bernard Lyon 1</a>
+							<p>2010 - 2014</p>
+							<p>Formation double diplome</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<i class="fa-graduation-cap"></i>
+						</div>
+						<div class="timeline-content">
+							<h2>Baccalaureat Scientifique</h2>
+							<p>Viet Nam</p>
+							<p>2010</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				<!-- End Tab Formation -->
+
+			</div>
+		 </div> 
+	 </div> 
+
+	 <div id="slide5">
+		<div class="title">
+			<h2>Mon porfolio</h2>
+		</div>
+		 <div class="content">
+			 <div class="my-port">
+			 
+				<div class="porfolio-item">
+					<div class="flipper">
+						<div class="front">
+							<img src="img/pexels-photo.jpeg">
+								<p class="project-title">Project 1</p>
+							</img>
+						</div>
+						<div class="back">
+							<h2>Project</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet bibendum nisi. Proin tincidunt posuere viverra. In et massa ex. Quisque maximus justo id dictum accumsan. Aliquam interdum ex ac erat auctor, vitae sagittis velit laoreet. Curabitur fermentum felis est, lobortis tempus erat varius in.</p>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="porfolio-item">
+					<div class="flipper">
+						<div class="front">
+							<img src="img/blur-old-antique-book.jpg">
+								<p class="project-title">Project 2</p>
+							</img>
+						</div>
+						<div class="back">
+							<h2>Project</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet bibendum nisi. Proin tincidunt posuere viverra. In et massa ex. Quisque maximus justo id dictum accumsan. Aliquam interdum ex ac erat auctor, vitae sagittis velit laoreet. Curabitur fermentum felis est, lobortis tempus erat varius in.</p>
+						</div>
+					</div>
+				</div> 
+				
+				<div class="porfolio-item">
+					<div class="flipper">
+						<div class="front">
+							<img src="img/city-cars-traffic-lights.jpeg">
+								<p class="project-title">Project 3</p>
+							</img>
+						</div>
+						<div class="back">
+							<h2>Project</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet bibendum nisi. Proin tincidunt posuere viverra. In et massa ex. Quisque maximus justo id dictum accumsan. Aliquam interdum ex ac erat auctor, vitae sagittis velit laoreet. Curabitur fermentum felis est, lobortis tempus erat varius in.</p>
+						</div>
+					</div>
+				</div> 
+				
+			 </div> 
+		 </div> 
+	 </div> 
+
+	 <div id="slide5b"></div>
+	 
+	 <div id="slide6">
+		<div id="map"></div>
+ 
+		 <div class="my-cont">
+			<div class="contact-form">
+				<div class="contact-wrap">
+					<h2>Une question, un projet?</h2>
+					<div class="group">
+						<input type="text" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Name</label>
+					</div>
+					<div class="group">
+						<input type="text" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Email</label>
+					</div>
+					<div class="group">
+						<textarea rows="4" required></textarea>
+						<span class="highlight"></span>
+						<span class="bar ta"></span>
+						<label>Content</label>
+					</div>
+					<a href="/" onclick="return false;" class="submit-btn">Send</a>
+				</div> 
+			</div> 
+			 <div class="contact-info">
+				<pre>
+					<code class="language-javascript">
+						window.onload = function(){
+						
+							$("adress").add("23 rue Jean Moulin, 93260 Les Lilas");
+							
+							$("telephone").add("+33 7 82 79 04 89");
+							
+							$("email").add("thucngdg@gmail.com" );
+							
+						}
+					</code>
+				</pre>
+				
+			 
+			 </div> 
+			 
+		 </div> 
+		 <footer>
+		 	Copyright © 2016 NGUYEN Dong Thuc
+		 	<span>
+		 		<i class="fa fa-angle-up" aria-hidden="true"></i>
+		 	</span>
+		 </footer>
+	 </div> 
+	 
+	<script src="classie.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

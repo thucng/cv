@@ -1,0 +1,65 @@
+@media screen and (max-width: 768px) {
+	#timeline {
+		margin: 30px;
+		padding: 0;
+	}
+	#timeline:before{
+		left: 0;
+	}
+	
+	#timeline .timeline-item .timeline-content {
+		width: 90%;
+		float: right;
+	}
+	#timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
+		left: 10%;
+		margin-left: -6px;
+		border-left: 0;
+		
+	}
+
+	.timeline-icon {
+		left: 0;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.my-skill .col-1, .my-skill .col-2, .my-skill .col-3{
+		width:100%;
+		height: 100%;
+		padding: 40px;
+	}
+	.my-profile .my-pict, .my-profile .my-desc{
+		width:100%;
+		position: relative;
+	}
+	.my-profile .my-pict{
+		height: 100vw;
+	}
+
+	.my-cont .contact-form{
+		width: 100%;
+	}
+
+	.my-cont .contact-form .group{
+		width: 100%;
+		margin: 25px 0;
+	}
+
+	.my-cont .contact-form .group textarea,.my-cont .contact-form .group input{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 50em) {
+	.icon-list a {
+		padding: 0.5em 0em;
+		margin: 0 5px;
+		font-size: 1em;
+	}
+	.icon-list a span {
+		display: none;
+	}
+}

@@ -1,0 +1,212 @@
+.skill_bar{
+	width: 90%;
+	height: 25px;
+	position: relative;
+	background: #f5f5f5;
+	margin: 20px auto;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.skill_area {
+	z-index: 1;
+	float: left;
+	padding: 0 0 0 10px;
+	color: #fff;
+	font-size: 15px;
+	line-height: 25px;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.percent_text {
+	z-index: 3;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0 2px 0 0;
+	color: #888;
+	font-size: 15px;
+	font-weight: 800;
+	line-height: 25px;
+}
+
+.skill{
+	height: 25px;
+	position: absolute;
+}
+
+	#html{
+		width: 60%;
+		animation: animate-html 4s;
+-webkit-animation: animate-html 4s;
+   -moz-animation: animate-html 4s;
+     -o-animation: animate-html 4s;
+		background-color: #d9212a;
+	}
+
+	@keyframes animate-html {
+		from {width: 10px;}
+		to {width: 60%;}
+	}
+	@-webkit-keyframes animate-html {
+		from {width: 10px;}
+		to {width: 60%;}
+	}
+	@-moz-keyframes animate-html {
+		from {width: 10px;}
+		to {width: 60%;}
+	}
+	@-o-keyframes animate-html {
+		from {width: 10px;}
+		to {width: 60%;}
+	}
+
+	#css{
+		width: 85%;
+		animation: animate-css 4s;
+-webkit-animation: animate-css 4s;
+   -moz-animation: animate-css 4s;
+     -o-animation: animate-css 4s;
+		background-color: #FFF94A;
+	}
+
+	@keyframes animate-css {
+		from {width: 10px;}
+		to {width: 85%;}
+	}
+	@-webkit-keyframes animate-css {
+		from {width: 10px;}
+		to {width: 85%;}
+	}
+	@-moz-keyframes animate-css {
+		from {width: 10px;}
+		to {width: 85%;}
+	}
+	@-o-keyframes animate-css {
+		from {width: 10px;}
+		to {width: 85%;}
+	}  
+	
+	#query {
+		width:65%;
+		animation: animate-query 4s;
+-webkit-animation: animate-query 4s;
+   -moz-animation: animate-query 4s;
+	 -o-animation: animate-query 4s;
+		background: #021533;
+	}
+	@keyframes animate-query{
+		from {width: 10px;}
+		to {width: 65%;}
+	}
+	@-webkit-keyframes animate-query{
+		from {width: 10px;}
+		to{width: 65%;}
+	}
+	@-moz-keyframes animate-query{
+		from{width: 10px;}
+		to{width:65%;}
+	}
+	@-o-keyframes animate-query{
+		from{width:10px;}
+		to{width: 65%;}
+	}
+	
+	#javascript {
+		width:65%;
+		animation: animate-javascript 4s;
+-webkit-animation: animate-javascript 4s;
+   -moz-animation: animate-javascript 4s;
+	 -o-animation: animate-javascript 4s;
+		background: #08aeac;
+	}
+	@keyframes animate-javascript{
+		from {width: 10px;}
+		to {width: 65%;}
+	}
+	@-webkit-keyframes animate-javascript{
+		from {width: 10px;}
+		to{width: 65%;}
+	}
+	@-moz-keyframes animate-javascript{
+		from{width: 10px;}
+		to{width:65%;}
+	}
+	@-o-keyframes animate-javascript{
+		from{width:10px;}
+		to{width: 65%;}
+	}
+
+	#primefaces {
+		width:75%;
+		animation: animate-primefaces 4s;
+-webkit-animation: animate-primefaces 4s;
+   -moz-animation: animate-primefaces 4s;
+	 -o-animation: animate-primefaces 4s;
+		background: #23b1db;
+	}
+	@keyframes animate-primefaces{
+		from {width: 10px;}
+		to {width: 75%;}
+	}
+	@-webkit-keyframes animate-primefaces{
+		from {width: 10px;}
+		to{width: 75%;}
+	}
+	@-moz-keyframes animate-primefaces{
+		from{width: 10px;}
+		to{width:75%;}
+	}
+	@-o-keyframes animate-primefaces{
+		from{width:10px;}
+		to{width: 75%;}
+	}
+
+	#java {
+		width:70%;
+		animation: animate-java 4s;
+-webkit-animation: animate-java 4s;
+   -moz-animation: animate-java 4s;
+	 -o-animation: animate-java 4s;
+		background: #10c281;
+	}
+	@keyframes animate-java{
+		from {width: 10px;}
+		to {width: 70%;}
+	}
+	@-webkit-keyframes animate-java{
+		from {width: 10px;}
+		to{width: 70%;}
+	}
+	@-moz-keyframes animate-java{
+		from{width: 10px;}
+		to{width:70%;}
+	}
+	@-o-keyframes animate-java{
+		from{width:10px;}
+		to{width: 70%;}
+	}
+
+	#php {
+		width:50%;
+		animation: animate-php 4s;
+-webkit-animation: animate-php 4s;
+   -moz-animation: animate-php 4s;
+	 -o-animation: animate-php 4s;
+		background: #c44e45;
+	}
+	@keyframes animate-php{
+		from {width: 10px;}
+		to {width: 50%;}
+	}
+	@-webkit-keyframes animate-php{
+		from {width: 10px;}
+		to{width: 50%;}
+	}
+	@-moz-keyframes animate-php{
+		from{width: 10px;}
+		to{width:50%;}
+	}
+	@-o-keyframes animate-php{
+		from{width:10px;}
+		to{width: 50%;}
+	}
